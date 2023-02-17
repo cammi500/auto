@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    display: flex;justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right,rgb(159, 168, 159),rgb(231, 104, 104));
+}
+.maincard{
+ 
+    position: relative;
+    display: flex;
+}
+.card{
+    position: relative;
+    width: 260px;height: 460px;
+    background-color: rgb(42,40,48);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:  8px 8px 15px gray;
+    transition : width 1s,height 1s;
+}
+.maincard:hover{
+    width: 270px;
+    height: 420px;
+
+}
+
+.img{
+    display: flex;
+    justify-content: center
+    ;align-items: center;
+    width: 100%;
+    height:50% ;
+    background-color: brown;
+    border-radius: 10% 4% 100% 80% / 0% 0% 100% 2%;transition: border-radius 1s;
+}
+
+.maincard:hover .img {
+    background-color: lightpink;
+    border-radius: 0% 4% 0% 100% / 4% 0% 100% 96%;
+
+}
+.product{
+    width: 55%;transition: transform 1s ,width 1s ,translateY 1s;
+    border-radius: 30%;
+}
+.maincard:hover .product{
+    width: 65%;
+    transform: rotate(20deg) translateY(35px);
+}
+.buy{
+    position: absolute;
+    top:100%;
+    left:8% ;
+    width: 90px;
+    height:35px ;
+    border: 1px solid white;
+    color: white;
+    background-color: salmon;
+    border-radius: 8px;
+    opacity: 0;
+    transition: top 1s,opacity 2s;
+}
+.maincard:hover .buy {
+top: 87%;
+opacity: 1;
+}
+.buy:hover{
+    width: 92px;
+    height: 37px ;
+    background-color: rgb(54, 45, 45);
+    cursor: pointer;
+}
+.cart{
+    position: absolute;
+    top: 87%;
+    right:-45% ;
+    width: 110px;
+    height:35px ;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(30, 34, 30);
+    border-radius: 8px;
+    opacity: 0;
+    transition: right 1s,opacity 2s;
+}
+.maincard:hover .cart{
+    opacity: 1;
+    right: 8%;
+}
+
+.text{
+    top: 85%;
+    position: absolute;
+    color: gray
+    ;opacity: 0.06;
+    text-shadow:  0px 2px white;
+    font-size: 59px;
+}
+.price{
+    position: absolute;
+    top: 73%;
+    left: 32%;
+    font-size: 32px;
+    color: white;
+}
+.pname{
+    position: absolute;
+    top: 58%;
+    left: 32%;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+.pdetail{
+    position: absolute;
+    top: 65%;
+    left: 10%;right: 10%;
+    font-size: 12px;
+    font-style: italic;
+    color: silver;cursor: pointer;
+}
+.side{
+    position: absolute;
+    top: 12%;
+    left: 10%;width: 50px;
+    height: 160px;
+  border-radius: 15px;
+    background-color: lightpink;
+}
+.maincard:hover .side{
+    left: -15%;
+}
+.color{
+    margin: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.blue{
+    background-color: deepskyblue;
+}
+.black{
+    background-color: black;
+}
+.yellow{
+    background-color: yellow;
+}
